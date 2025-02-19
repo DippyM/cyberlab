@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberLab - Interactive Security Learning</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <nav>
+        <div class="logo">CyberLab</div>
+        <ul>
+            <li><a href="#password">Password Security</a></li>
+            <li><a href="#encryption">Encryption Demo</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="password" class="module">
+            <h2>Password Strength Analyzer</h2>
+            <div class="tool-container">
+                <input type="password" id="passwordInput" placeholder="Enter a password to analyze">
+                <button onclick="analyzePassword()">Analyze</button>
+                <div id="passwordStrength" class="results">
+                    <div class="strength-meter">
+                        <div class="strength-fill"></div>
+                    </div>
+                    <div class="checks"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="encryption" class="module">
+            <h2>Encryption/Decryption Demo</h2>
+            <div class="tool-container">
+                <div class="encrypt-section">
+                    <h3>Encrypt Text</h3>
+                    <textarea id="plaintext" placeholder="Enter text to encrypt"></textarea>
+                    <button onclick="encryptText()">Encrypt</button>
+                    <div class="result">
+                        <p>Encrypted Text:</p>
+                        <textarea id="encryptedText" readonly></textarea>
+                        <p>Key:</p>
+                        <input type="text" id="encryptionKey" readonly>
+                    </div>
+                </div>
+                <div class="decrypt-section">
+                    <h3>Decrypt Text</h3>
+                    <textarea id="ciphertext" placeholder="Enter encrypted text"></textarea>
+                    <input type="text" id="decryptKey" placeholder="Enter decryption key">
+                    <button onclick="decryptText()">Decrypt</button>
+                    <div class="result">
+                        <p>Decrypted Text:</p>
+                        <textarea id="decryptedText" readonly></textarea>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
