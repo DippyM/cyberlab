@@ -9,14 +9,14 @@ A web-based platform for learning cybersecurity concepts through hands-on exerci
   - Character complexity (uppercase, lowercase, numbers, special characters)
   - Visual strength meter
  
-![Cybersecurity Demo](https://github.com/DippyM/cyberlab/blob/master/PassAnalyzr.gif)
+![Cybersecurity Demo](https://github.com/DippyM/cyberlab/blob/master/PassAnalyzer.gif)
 
 - **Encryption/Decryption Demo**: Learn about cryptography
   - Symmetric encryption using Fernet
   - Real-time encryption and decryption
   - Key management demonstration
  
-![Cybersecurity Demo](https://github.com/DippyM/cyberlab/blob/master/decodr.gif)
+![Cybersecurity Demo](https://github.com/DippyM/cyberlab/blob/master/decoder.gif)
 
 - Phishing Awareness Training
 - Network Security Basics
